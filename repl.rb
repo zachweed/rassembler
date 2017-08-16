@@ -13,6 +13,7 @@ class REPL
     print_command(command)
   rescue Command::AsmSyntaxError
     puts "Invalid Command: #{command.value}"
+  ensure
     start
   end
 
